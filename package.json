@@ -1,0 +1,16 @@
+{
+  "name": "@stud-log/news-types",
+  "main": "index.js",
+  "version": "1.0.0",
+  "description": "",
+  "types": "index.d.ts",
+  "repository": "git://github.com/stud-log/news-types.git",
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "Maxssobolev<himax108@mail.ru>",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.8.3"
+  }
+}
