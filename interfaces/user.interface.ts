@@ -7,9 +7,17 @@ export const UserRole = {
 export interface IUser {
   id?: number;
 
-  name: string;
+  firstName: string;
 
-  avatarImage: string;
+  lastName: string;
+
+  email: string;
+
+  phone: string;
+
+  group: string;
+
+  avatar: string;
 
   role?: keyof typeof UserRole;
 }

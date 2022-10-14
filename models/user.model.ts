@@ -4,9 +4,17 @@ import { Post } from './post.model';
 export class User {
   readonly id: number;
 
-  readonly name: string;
+  readonly firstName: string;
 
-  readonly avatarImage: string;
+  readonly lastName: string;
+
+  readonly email: string;
+
+  readonly phone: string;
+
+  readonly group: string;
+
+  readonly avatar: string;
 
   readonly role: keyof typeof UserRole;
 
