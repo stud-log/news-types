@@ -1,4 +1,4 @@
-import { UserRole } from '../interfaces/user.interface';
+import { UserRole, UserStatus } from '../interfaces/user.interface';
 import { Post } from './post.model';
 
 export class User {
@@ -17,6 +17,8 @@ export class User {
   readonly group: string;
 
   readonly avatar: string;
+
+  readonly status: keyof typeof UserStatus;
 
   readonly role: keyof typeof UserRole;
 

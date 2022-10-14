@@ -25,7 +25,14 @@ const Weekparity = {
   both: 'both',
 };
 
+const UserStatus = {
+  inReview: 'inReview',
+  approved: 'approved',
+  rejected: 'rejected',
+};
+
 module.exports = {
+  UserStatus,
   UserRole,
   PostType,
   Weekday,

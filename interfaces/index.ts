@@ -4,9 +4,10 @@ import { IPost, PostType } from './post.interface';
 import { ISubject } from './subject.interface';
 import { ITimetable, Weekday, Weekparity } from './timetable.interface';
 import { IUserFavourite } from './user-favourite.interface';
-import { IUser, UserRole } from './user.interface';
+import { IUser, UserRole, UserStatus } from './user.interface';
 
 export {
+  UserStatus,
   UserRole,
   PostType,
   Weekday,

@@ -4,6 +4,12 @@ export const UserRole = {
   admin: 'admin',
 } as const;
 
+export const UserStatus = {
+  inReview: 'inReview',
+  approved: 'approved',
+  rejected: 'rejected',
+} as const;
+
 export interface IUser {
   id?: number;
 
@@ -20,6 +26,8 @@ export interface IUser {
   password: string;
 
   avatar: string;
+
+  status?: keyof typeof UserStatus;
 
   role?: keyof typeof UserRole;
 }
