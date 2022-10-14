@@ -17,6 +17,8 @@ export interface IUser {
 
   group: string;
 
+  password: string;
+
   avatar: string;
 
   role?: keyof typeof UserRole;

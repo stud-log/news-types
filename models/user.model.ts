@@ -10,6 +10,8 @@ export class User {
 
   readonly email: string;
 
+  readonly password?: string;
+
   readonly phone: string;
 
   readonly group: string;
