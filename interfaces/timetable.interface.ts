@@ -8,6 +8,16 @@ export const Weekday = {
   Sun: 'Sun',
 } as const;
 
+export const WeekdayRu = {
+  Mon: 'Понедельник',
+  Tue: 'Вторник',
+  Wed: 'Среда',
+  Thu: 'Четверг',
+  Fri: 'Пятница',
+  Sat: 'Суббота',
+  Sun: 'Воскресенье',
+} as const;
+
 export const Weekparity = {
   even: '0',
   odd: '1',

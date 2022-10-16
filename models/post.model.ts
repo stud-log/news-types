@@ -11,6 +11,8 @@ export class Post {
 
   readonly deadline: string;
 
+  readonly group: string | null;
+
   readonly postType: keyof typeof PostType;
 
   readonly usersDone?: User[];

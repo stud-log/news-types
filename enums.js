@@ -31,8 +31,19 @@ const UserStatus = {
   rejected: 'rejected',
 };
 
+const WeekdayRu = {
+  Mon: 'Понедельник',
+  Tue: 'Вторник',
+  Wed: 'Среда',
+  Thu: 'Четверг',
+  Fri: 'Пятница',
+  Sat: 'Суббота',
+  Sun: 'Воскресенье',
+};
+
 module.exports = {
   UserStatus,
+  WeekdayRu,
   UserRole,
   PostType,
   Weekday,

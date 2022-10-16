@@ -5,6 +5,8 @@ export class Timetable {
 
   readonly title: string;
 
+  readonly group: string;
+
   readonly link: string | null;
 
   readonly weekday: keyof typeof Weekday;

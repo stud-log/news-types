@@ -12,6 +12,8 @@ export interface IPost {
 
   deadline: string;
 
+  group?: string;
+
   postType: keyof typeof PostType;
 
   subjectId: number;
