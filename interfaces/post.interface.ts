@@ -3,6 +3,12 @@ export const PostType = {
   news: 'news',
 } as const;
 
+export const PostLabel = {
+  important: 'important',
+  event: 'event',
+  usefull: 'usefull',
+} as const;
+
 export interface IPost {
   id?: number;
 
@@ -15,6 +21,8 @@ export interface IPost {
   group?: string;
 
   postType: keyof typeof PostType;
+
+  postLabel?: keyof typeof PostLabel;
 
   subjectId: number;
 }

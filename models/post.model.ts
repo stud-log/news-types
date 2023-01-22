@@ -1,4 +1,4 @@
-import { PostType } from '../interfaces/post.interface';
+import { PostType, PostLabel } from '../interfaces/post.interface';
 import { Subject } from './subjects.model';
 import { User } from './user.model';
 
@@ -14,6 +14,8 @@ export class Post {
   readonly group: string | null;
 
   readonly postType: keyof typeof PostType;
+
+  readonly postLabel: keyof typeof PostLabel;
 
   readonly usersDone?: User[];
 

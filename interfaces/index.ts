@@ -1,6 +1,6 @@
 import { IDoneHomework } from './done-homework.interface';
 import { ILike } from './like.interface';
-import { IPost, PostType } from './post.interface';
+import { IPost, PostType, PostLabel } from './post.interface';
 import { ISubject } from './subject.interface';
 import { ITimetable, Weekday, Weekparity, WeekdayRu } from './timetable.interface';
 import { IUserFavourite } from './user-favourite.interface';
@@ -13,6 +13,7 @@ export {
   Weekday,
   Weekparity,
   WeekdayRu,
+  PostLabel,
   type IDoneHomework,
   type ILike,
   type IPost,

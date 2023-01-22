@@ -41,7 +41,14 @@ const WeekdayRu = {
   Sun: 'Воскресенье',
 };
 
+const PostLabel = {
+  important: 'important',
+  event: 'event',
+  usefull: 'usefull',
+};
+
 module.exports = {
+  PostLabel,
   UserStatus,
   WeekdayRu,
   UserRole,
