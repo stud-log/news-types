@@ -15,7 +15,9 @@ export class Post {
 
   readonly postType: keyof typeof PostType;
 
-  readonly postLabel: keyof typeof PostLabel;
+  readonly postLabel: keyof typeof PostLabel | null;
+
+  readonly postLabelContent: keyof typeof PostLabel | null;
 
   readonly usersDone?: User[];
 
