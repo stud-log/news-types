@@ -1,8 +1,13 @@
-import { UserRole, UserStatus } from '../interfaces/user.interface';
-import { Post } from './post.model';
+import { Group } from './group.model';
+import { UserRoles } from './userRoles.model';
+import { UserStatus } from '../interfaces/user.interface';
 
 export class User {
   readonly id: number;
+
+  readonly roleId: string;
+
+  readonly groupId: string;
 
   readonly firstName: string;
 
@@ -10,21 +15,17 @@ export class User {
 
   readonly email: string;
 
-  readonly password?: string;
+  private readonly password?: string;
 
   readonly phone: string;
 
-  readonly group: string;
+  readonly group: Group;
 
   readonly avatar: string;
 
   readonly status: keyof typeof UserStatus;
 
-  readonly role: keyof typeof UserRole;
-
-  readonly postsDone?: Post[];
-
-  readonly postsLiked?: Post[];
+  readonly role: UserRoles;
 
   readonly createdAt: string;
   readonly updatedAt: string;
