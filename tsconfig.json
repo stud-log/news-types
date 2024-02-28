@@ -1,20 +1,31 @@
 {
   "compilerOptions": {
     "module": "CommonJS",
-    "lib": ["es2015"],
+    "lib": [
+      "es2015"
+    ],
     "noImplicitAny": true,
     "noImplicitThis": true,
     "strictNullChecks": true,
     "strictFunctionTypes": true,
     "baseUrl": ".",
-    "typeRoots": ["."],
+    "typeRoots": [
+      "."
+    ],
     "outDir": "lib",
     "types": [],
     "noEmit": true,
     "forceConsistentCasingInFileNames": true,
     "declaration": true,
+    "strictPropertyInitialization": false,
     "allowJs": true
   },
-  "files": ["index.d.ts", "enums.js"],
-  "exclude": ["lib", "node_modules"]
+  "files": [
+    "index.d.ts",
+    "enums.js"
+  ],
+  "exclude": [
+    "lib",
+    "node_modules"
+  ]
 }
