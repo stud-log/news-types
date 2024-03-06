@@ -1,8 +1,12 @@
-import { Interfaces } from './index';
-export declare const UserRole: typeof Interfaces.UserRole;
-export declare const UserStatus: typeof Interfaces.UserStatus;
-export declare const PostType: typeof Interfaces.PostType;
-export declare const PostLabel: typeof Interfaces.PostLabel;
-export declare const Weekday: typeof Interfaces.Weekday;
-export declare const WeekdayRu: typeof Interfaces.WeekdayRu;
-export declare const Weekparity: typeof Interfaces.Weekparity;
+
+import { Models } from './index';
+export declare const TimetableTypes: typeof Models.TimetableTypes;
+export declare const TimetableWeekdays: typeof Models.TimetableWeekdays;
+export declare const TimetableWeekdaysRU: typeof Models.TimetableWeekdaysRU;
+export declare const TimetableWeekparities: typeof Models.TimetableWeekparities;
+export declare const CalendarActivityType: typeof Models.CalendarActivityType;
+export declare const HomeworkType: typeof Models.HomeworkType;
+export declare const LogType: typeof Models.LogType;
+export declare const UserStatus: typeof Models.UserStatus;
+export declare const UserTaskStatus: typeof Models.UserTaskStatus;
+

@@ -1,15 +1,11 @@
-const UserRole = {
-  student: 'student',
-  headman: 'headman',
-  admin: 'admin',
+const TimetableTypes = {
+  practice: 'practice',
+  lecture: 'lecture',
+  exam: 'exam',
+  test: 'test',
 };
 
-const PostType = {
-  homework: 'homework',
-  news: 'news',
-};
-
-const Weekday = {
+const TimetableWeekdays = {
   Mon: 'Mon',
   Tue: 'Tue',
   Wed: 'Wed',
@@ -19,19 +15,7 @@ const Weekday = {
   Sun: 'Sun',
 };
 
-const Weekparity = {
-  even: '0',
-  odd: '1',
-  both: 'both',
-};
-
-const UserStatus = {
-  inReview: 'inReview',
-  approved: 'approved',
-  rejected: 'rejected',
-};
-
-const WeekdayRu = {
+const TimetableWeekdaysRU = {
   Mon: 'Понедельник',
   Tue: 'Вторник',
   Wed: 'Среда',
@@ -41,18 +25,51 @@ const WeekdayRu = {
   Sun: 'Воскресенье',
 };
 
-const PostLabel = {
-  important: 'important',
-  event: 'event',
-  usefull: 'usefull',
+const TimetableWeekparities = {
+  even: '0',
+  odd: '1',
+  both: 'both',
 };
 
+const CalendarActivityType = {
+  custom: 'custom',
+  timetable: 'timetable',
+};
+
+const HomeworkType = {
+  individual: 'individual',
+  group: 'group'
+};
+
+const LogType = {
+  entrance: 'entrance',
+  comment: 'comment',
+  edit: 'edit',
+  create: 'create',
+  service: 'service',
+};
+
+const UserStatus = {
+  inReview: 'inReview',
+  approved: 'approved',
+  rejected: 'rejected',
+};
+
+const UserTaskStatus = {
+  inProgress: 'inProgress',
+  feedback: 'feedback',
+  passed: 'passed',
+};
+
+// eslint-disable-next-line no-undef
 module.exports = {
-  PostLabel,
+  CalendarActivityType,
+  UserTaskStatus,
   UserStatus,
-  WeekdayRu,
-  UserRole,
-  PostType,
-  Weekday,
-  Weekparity,
+  LogType,
+  HomeworkType,
+  TimetableWeekparities,
+  TimetableWeekdaysRU,
+  TimetableTypes,
+  TimetableWeekdays
 };
