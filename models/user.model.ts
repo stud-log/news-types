@@ -29,6 +29,8 @@ export class User {
 
   readonly lastName: string;
 
+  readonly patronymic: string;
+
   readonly password: string;
 
   readonly phone: string;
