@@ -7,4 +7,5 @@ export class RegDTO {
   readonly email: string;
   readonly password: string;
   readonly passwordConfirmation: string;
+  readonly role: string;
 }
