@@ -31,6 +31,8 @@ export class User {
 
   readonly patronymic: string;
 
+  readonly email: string;
+
   readonly password: string;
 
   readonly phone: string;
