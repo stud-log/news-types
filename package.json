@@ -1,7 +1,7 @@
 {
   "name": "@stud-log/news-types",
   "main": "index.js",
-  "version": "1.1.22",
+  "version": "1.1.23",
   "description": "",
   "types": "index.d.ts",
   "repository": "git://github.com/stud-log/news-types.git",
