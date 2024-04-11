@@ -1,3 +1,7 @@
+import { Group } from "./group.model";
+import { Record } from "./records.model";
+import { User } from "./user.model";
+
 export class News {
   readonly id: number;
     
@@ -6,6 +10,20 @@ export class News {
   readonly content: string;
 
   readonly label: string;
+
+  groupId: number;
+
+  group: Group;
+
+  authorId: number;
+  
+  author: User;
+
+  recordId: number | null;
+  
+  record: Record | null;
+
+  coverImage: string | null;
     
   readonly createdAt: string;
   readonly updatedAt: string;

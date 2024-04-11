@@ -4,7 +4,7 @@ import { Record } from "./records.model";
  * fileType это расширение
  * fileSize in bytes
  */
-export class File {
+export class AppFiles {
   readonly id: number;
 
   readonly recordId: number;

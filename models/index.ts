@@ -7,7 +7,7 @@ import { UserTask, UserTaskStatus } from './user-tasks.model';
 
 import { Achievement } from './achievements.model';
 import { CustomActivity } from './custom-activities.model';
-import { File } from './files.model';
+import { AppFiles } from './files.model';
 import { Group } from './group.model';
 import { News } from './news.model';
 import { Record } from './records.model';
@@ -31,7 +31,7 @@ export {
   Calendar,
   type CalendarActivityType,
   CustomActivity,
-  File,
+  AppFiles as File,
   Group,
   Homework,
   HomeworkType,
