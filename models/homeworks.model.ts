@@ -31,8 +31,10 @@ export class Homework {
     
   readonly content: string;
 
-  readonly deadline: string;
+  startDate: string;
 
+  endDate: string;
+  
   readonly type: keyof typeof HomeworkType;
     
   readonly createdAt: string;
