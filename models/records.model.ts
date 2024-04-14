@@ -40,4 +40,8 @@ export class Record {
   userTasks: UserTask[];
 
   views: UserView[];
+
+  meReacted: boolean;
+
+  meFavorited: boolean;
 }

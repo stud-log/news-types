@@ -16,6 +16,7 @@ export class UserReaction {
    * Special character which can be represented as emoji
    */
   readonly type: string;
+  readonly imageUrl: string | null;
 
   readonly createdAt: string;
   readonly updatedAt: string;
