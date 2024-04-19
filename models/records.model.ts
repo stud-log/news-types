@@ -40,10 +40,4 @@ export class Record {
   userTasks: UserTask[];
 
   views: UserView[];
-
-  meReacted: UserReaction[];
-
-  meWorked: UserTask[];
-
-  meFavorited: boolean;
 }
