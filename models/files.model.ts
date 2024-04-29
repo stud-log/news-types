@@ -13,10 +13,7 @@ export class AppFiles {
 
   readonly url: string;
 
-  /**
-   * extension
-   */
-  readonly fileType: string;
+  readonly fileName: string;
 
   /**
    * in bytes
