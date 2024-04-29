@@ -5,6 +5,7 @@ import { Homework } from "./homeworks.model";
 import { News } from "./news.model";
 import { Team } from "./teams.model";
 import { UserComment } from "./user-comments.model";
+import { UserFavorite } from "./user-favorites.model";
 import { UserReaction } from "./user-reactions.model";
 import { UserTask } from "./user-tasks.model";
 import { UserView } from "./user-views.model";
@@ -34,6 +35,8 @@ export class Record {
   comments: UserComment[];
 
   reactions: UserReaction[];
+
+  favorites: UserFavorite[];
   
   files: AppFiles[];
   
