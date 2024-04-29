@@ -1,8 +1,8 @@
 const TimetableTypes = {
-  practice: 'practice',
-  lecture: 'lecture',
-  exam: 'exam',
-  test: 'test',
+  practice : 'Пр',
+  lecture : 'Лек',
+  both : 'Лек, Пр',
+  lab : 'Лаб'
 };
 
 const TimetableWeekdays = {
