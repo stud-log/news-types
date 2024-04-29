@@ -65,6 +65,7 @@ export class Timetable {
   readonly weekparity: keyof typeof TimetableWeekparities;
 
   readonly startTime: string;
+  readonly endTime: string;
 
   readonly classroom: string | null;
 
