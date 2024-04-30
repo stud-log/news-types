@@ -1,10 +1,12 @@
 import { Group } from './group.model';
+import { Log } from './logs.model';
 import { UserAchievement } from './user-achievements.model';
 import { UserAttendance } from './user-attendance.model';
 import { UserComment } from './user-comments.model';
 import { UserFavorite } from './user-favorites.model';
 import { UserNotification } from './user-notifications.model';
 import { UserRole } from './user-roles.model';
+import { UserSetting } from './user-settings.model';
 import { UserTask } from './user-tasks.model';
 import { UserTeam } from './user-teams.model';
 
@@ -25,6 +27,8 @@ export class User {
 
   readonly group: Group;
 
+  readonly nickname: string | null;
+
   readonly firstName: string;
 
   readonly lastName: string;
@@ -39,11 +43,15 @@ export class User {
 
   readonly avatarUrl: string | null;
 
+  readonly settings: UserSetting;
+
   readonly comments: UserComment[];
 
   readonly attendances: UserAttendance[];
 
   readonly favorites: UserFavorite[];
+
+  readonly logs: Log[];
 
   readonly notifications: UserNotification[];
 

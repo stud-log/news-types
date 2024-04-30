@@ -47,6 +47,7 @@ const LogType = {
   edit: 'edit',
   create: 'create',
   service: 'service',
+  readGuide: 'readGuide',
 };
 
 const UserStatus = {

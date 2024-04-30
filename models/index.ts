@@ -1,3 +1,4 @@
+import { UserSetting } from './user-settings.model';
 import { Calendar, CalendarActivityType } from './calendar.model';
 import { Homework, HomeworkType } from './homeworks.model';
 import { Log, LogType } from './logs.model';
@@ -37,6 +38,7 @@ export {
   HomeworkType,
   Log,
   type LogType,
+  UserSetting,
   News,
   Record,
   RefreshToken,

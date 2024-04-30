@@ -5,6 +5,7 @@ export const LogType = {
   edit: 'edit',
   create: 'create',
   service: 'service',
+  readGuide: 'readGuide',
 } as const;
 
 /**
@@ -13,9 +14,9 @@ export const LogType = {
 export class Log {
   readonly id: number;
 
-  readonly recordId: string | null;
+  readonly recordId: number | null;
     
-  readonly userId: string | null;
+  readonly userId: number | null;
 
   readonly content: string | null;
 

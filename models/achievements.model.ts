@@ -9,6 +9,7 @@ export class Achievement {
   readonly imgSrc: string;
 
   readonly condition: any;
+  readonly trophy: any;
 
   readonly createdAt: string;
   readonly updatedAt: string;
