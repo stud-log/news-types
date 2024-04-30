@@ -25,6 +25,8 @@ export class UserComment {
 
   readonly parent: UserComment | null;
 
+  readonly children: UserComment[];
+
   readonly title: string | null;
 
   readonly content: string;
