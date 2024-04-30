@@ -13,9 +13,13 @@ export class UserComment {
   
   readonly user: User;
 
+  readonly myRecordId: number;
+
   readonly recordId: number;
   
   readonly record: Record;
+
+  readonly myRecord: Record;
 
   readonly parentId: number | null;
 
