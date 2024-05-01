@@ -17,7 +17,11 @@ export const UserTaskStatus = {
  * trackedTime (in ms) - время, потраченное на задачу (может отсутствовать, тогда будет взято время в промежутке от createdAt до doneAt)
  * userId, при указанном recordId имеет смысл "исполнитель задачи"
  * описание может быть не заполнено
- *
+ * __NOTE__:
+ * Если заполнены поля задачи, и указано recordId - это значит, что мы создали свою задачу рамках какой то record сущности. Предполагается, что в рамках сущности teams.
+ * Если заполнено только recordId, значит мы просто взяли домашку в работу.
+ * Если же задача полностью кастомная, то recordId вообще не будет.
+ * Если заполнено parentId, то задача является зависимой от указанной задачи. parentId обязательно ссылается только на UserTask, чем бы он ни был
  */
 export class UserTask {
   readonly id: number;
@@ -39,6 +43,18 @@ export class UserTask {
   readonly status: keyof typeof UserTaskStatus;
 
   readonly doneDate: string;
+
+  readonly endDate: string;
+
+  readonly myRecordId: number;
+    
+  readonly myRecord: Record;
+  
+  readonly parent: UserTask;
+
+  readonly children: UserTask[];
+
+  readonly parentId: number | null;
 
   readonly createdAt: string;
   readonly updatedAt: string;
