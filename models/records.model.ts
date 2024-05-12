@@ -28,6 +28,8 @@ export class Record {
 
   homework?: Homework;
 
+  userTask: UserTask;
+  
   calendar?: Calendar;
 
   team?: Team;
