@@ -42,6 +42,8 @@ export class UserTask {
 
   readonly status: keyof typeof UserTaskStatus;
 
+  readonly startDate: string;
+
   readonly doneDate: string;
 
   readonly endDate: string;
