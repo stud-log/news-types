@@ -14,7 +14,19 @@ export const UserStatus = {
   inReview: 'inReview',
   approved: 'approved',
   rejected: 'rejected',
+  deleted: 'deleted'
 } as const;
+
+const UserStatusRu = {
+  inReview: 'на проверке',
+  approved: 'одобрен',
+  rejected: 'отклонен',
+  deleted: 'удален'
+} as const;
+
+export const getUserStatusRu = (status: keyof typeof UserStatus) => {
+  return UserStatusRu[status];
+};
 
 export class User {
   readonly id: number;

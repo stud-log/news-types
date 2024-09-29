@@ -3,7 +3,7 @@ import { Calendar, CalendarActivityType } from './calendar.model';
 import { Homework, HomeworkType } from './homeworks.model';
 import { Log, LogType } from './logs.model';
 import { Timetable, TimetableTypes, TimetableWeekdays, TimetableWeekparities, TimetableWeekdaysRU } from './timetable.model';
-import { User, UserStatus } from './user.model';
+import { User, UserStatus, getUserStatusRu } from './user.model';
 import { UserTask, UserTaskStatus } from './user-tasks.model';
 
 import { Achievement } from './achievements.model';
@@ -59,6 +59,7 @@ export {
   UserReaction,
   UserRole,
   type UserStatus,
+  getUserStatusRu,
   UserTask,
   type UserTaskStatus,
   UserTeam,

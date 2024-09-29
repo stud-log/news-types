@@ -13,10 +13,14 @@ export class RolePermission {
   readonly roleId: number;
     
   readonly role: UserRole;
-
-  readonly canEdit: string;
-
-  readonly canInvite: string;
+  
+  readonly canEdit?: string;
+  readonly canInvite?: string;
+  readonly aTeacher?: boolean;
+  readonly anAdmin?: boolean;
+  readonly canSendPostsToTeachers?: boolean;
+  readonly canSendNewsToTeachers?: boolean;
+  readonly canManageUsers?: boolean;
   
   readonly createdAt: string;
   readonly updatedAt: string;
