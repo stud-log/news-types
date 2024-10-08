@@ -54,6 +54,7 @@ const UserStatus = {
   inReview: 'inReview',
   approved: 'approved',
   rejected: 'rejected',
+  deleted: 'deleted',
 };
 
 const UserTaskStatus = {
