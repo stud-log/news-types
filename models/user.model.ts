@@ -1,5 +1,6 @@
 import { Group } from './group.model';
 import { Log } from './logs.model';
+import { Subject } from './subject.model';
 import { UserAchievement } from './user-achievements.model';
 import { UserAttendance } from './user-attendance.model';
 import { UserComment } from './user-comments.model';
@@ -55,6 +56,8 @@ export class User {
 
   readonly avatarUrl: string | null;
 
+  readonly createdFromAdminPanel: boolean;
+
   readonly settings: UserSetting;
 
   readonly comments: UserComment[];
@@ -68,6 +71,8 @@ export class User {
   readonly notifications: UserNotification[];
 
   readonly tasks: UserTask[];
+
+  readonly subjects: Subject[];
 
   readonly teams: UserTeam[];
 
