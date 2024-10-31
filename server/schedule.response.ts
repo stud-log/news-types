@@ -2,6 +2,7 @@ import { Timetable, TimetableTypes, TimetableWeekdays, TimetableWeekparities } f
 
 import { CalendarActivityType } from '../models/calendar.model';
 import { CustomActivity } from './../models/custom-activities.model';
+import { Group } from 'models';
 
 /**
  * Response is an array of this type
@@ -23,6 +24,7 @@ export class GetSchedule {
     endDate: string;
     timetable: Timetable[];
     customActivity: CustomActivity[];
+    group: Group;
   };
 }
 
@@ -46,5 +48,6 @@ export class GetScheduleElement {
     endDate: string;
     timetable: Timetable[];
     customActivity: CustomActivity[];
+    group: Group;
   };
 }
