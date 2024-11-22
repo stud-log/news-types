@@ -20,7 +20,9 @@ export class Record {
   /**
    * Needed for easy identifying group the records relates to
    */
-  groupId: number;
+  groupId: number | null;
+
+  reachableForGroups: number[] | null;
 
   group: Group;
 
@@ -45,4 +47,20 @@ export class Record {
   userTasks: UserTask[];
 
   views: UserView[];
+
+  /**
+   * Нужно для того, чтобы при создании записи, с которой могут взаимодействовать несколько групп,
+   * можно было разделить копии от оригинальной сущности.
+   */
+  originalId: number | null;
+
+  original: Record;
+
+  copies: Record[];
+
+  isCopy: boolean | null;
+
+  isOriginal: boolean | null;
+
+  relatedGroupIds: number[] | null;
 }

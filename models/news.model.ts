@@ -11,7 +11,7 @@ export class News {
 
   readonly label: string;
 
-  groupId: number;
+  groupId: number | null;
 
   group: Group;
 
@@ -24,6 +24,10 @@ export class News {
   record: Record | null;
 
   coverImage: string | null;
+
+  isOriginal: boolean | null;
+
+  relatedGroupIds: number[] | null;
     
   readonly createdAt: string;
   readonly updatedAt: string;

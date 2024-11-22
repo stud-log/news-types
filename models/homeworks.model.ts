@@ -19,7 +19,7 @@ export class Homework {
 
   subject: Subject;
  
-  groupId: number;
+  groupId: number | null;
   
   group: Group;
   
@@ -34,6 +34,10 @@ export class Homework {
   startDate: string;
 
   endDate: string;
+
+  isOriginal: boolean | null;
+
+  relatedGroupIds: number[] | null;
   
   readonly type: keyof typeof HomeworkType;
     
