@@ -1,5 +1,6 @@
 import { Group } from './group.model';
 import { Log } from './logs.model';
+import { Record } from './records.model';
 import { Subject } from './subject.model';
 import { UserAchievement } from './user-achievements.model';
 import { UserAttendance } from './user-attendance.model';
@@ -73,6 +74,8 @@ export class User {
   readonly tasks: UserTask[];
 
   readonly subjects: Subject[];
+
+  readonly records: Record[];
 
   readonly teams: UserTeam[];
 

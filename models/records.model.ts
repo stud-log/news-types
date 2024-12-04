@@ -9,6 +9,7 @@ import { UserFavorite } from "./user-favorites.model";
 import { UserReaction } from "./user-reactions.model";
 import { UserTask } from "./user-tasks.model";
 import { UserView } from "./user-views.model";
+import { User } from "./user.model";
 
 export class Record {
   readonly id: number;
@@ -52,6 +53,10 @@ export class Record {
    * Нужно для того, чтобы при создании записи, с которой могут взаимодействовать несколько групп,
    * можно было разделить копии от оригинальной сущности.
    */
+  authorId: number | null;
+
+  author: User;
+
   originalId: number | null;
 
   original: Record;
