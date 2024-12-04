@@ -68,4 +68,6 @@ export class Record {
   isOriginal: boolean | null;
 
   relatedGroupIds: number[] | null;
+
+  relatedGroups: Group[];
 }
