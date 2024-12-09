@@ -70,4 +70,6 @@ export class Record {
   relatedGroupIds: number[] | null;
 
   relatedGroups: Group[];
+
+  visibility: boolean | null;
 }
