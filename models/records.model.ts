@@ -1,3 +1,4 @@
+import { Assignment } from './assignments.model';
 import { AppFiles } from "./files.model";
 import { Calendar } from "./calendar.model";
 import { Group } from "./group.model";
@@ -30,6 +31,8 @@ export class Record {
   news?: News;
 
   homework?: Homework;
+
+  assignment?: Assignment;
 
   userTask: UserTask;
   
@@ -69,7 +72,11 @@ export class Record {
 
   relatedGroupIds: number[] | null;
 
+  relatedUserIds: number[] | null;
+
   relatedGroups: Group[];
+
+  relatedUsers: User[];
 
   visibility: boolean | null;
 }

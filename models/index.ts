@@ -26,10 +26,12 @@ import { UserReaction } from './user-reactions.model';
 import { UserRole } from './user-roles.model';
 import { UserTeam } from './user-teams.model';
 import { UserView } from './user-views.model';
+import { Assignment } from './assignments.model';
 
 export {
   Achievement,
   Calendar,
+  Assignment,
   type CalendarActivityType,
   CustomActivity,
   AppFiles as File,
