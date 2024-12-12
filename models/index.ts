@@ -26,10 +26,11 @@ import { UserReaction } from './user-reactions.model';
 import { UserRole } from './user-roles.model';
 import { UserTeam } from './user-teams.model';
 import { UserView } from './user-views.model';
-import { Assignment } from './assignments.model';
+import { Assignment, AssignmentPriority } from './assignments.model';
 
 export {
   Achievement,
+  type AssignmentPriority,
   Calendar,
   Assignment,
   type CalendarActivityType,

@@ -2,6 +2,11 @@
 import { Record } from './records.model';
 import { User } from './user.model';
 
+export const AssignmentPriority = {
+    1: 'Высокий приоритет',
+    2: 'Обычный приоритет',
+    3: 'Низкий приоритет',
+} as const;
 
 /**
  * Задачи, порученные конкретным пользователям ИЛИ (строго "или") всей группе.
@@ -33,7 +38,7 @@ export class Assignment  {
 
     readonly endDate: string;
 
-    readonly priority: number | null;
+    readonly priority: keyof typeof AssignmentPriority | null;
 
     readonly isOriginal: boolean;
 

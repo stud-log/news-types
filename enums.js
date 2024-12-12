@@ -63,9 +63,16 @@ const UserTaskStatus = {
   passed: 'passed',
 };
 
+const AssignmentPriority = {
+  1: 'Высокий приоритет',
+  2: 'Обычный приоритет',
+  3: 'Низкий приоритет',
+};
+
 // eslint-disable-next-line no-undef
 module.exports = {
   CalendarActivityType,
+  AssignmentPriority,
   UserTaskStatus,
   UserStatus,
   LogType,
