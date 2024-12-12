@@ -74,9 +74,11 @@ export class Record {
 
   relatedUserIds: number[] | null;
 
-  relatedGroups: Group[];
+  relatedGroups?: Group[];
 
-  relatedUsers: User[];
+  relatedGroupsUsers?: User[];
+
+  relatedUsers?: User[];
 
   visibility: boolean | null;
 }
