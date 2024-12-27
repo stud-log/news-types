@@ -9,7 +9,7 @@ export type EXPECTED_EXCEL_HEADERS =
   "Аудитория";
 
 export class SendExcelScheduleOptionsDTO {
-    readonly options: {
+    options: {
         columns: {
             myColumn: EXPECTED_EXCEL_HEADERS;
             theirColumn: {name: string; letter: string};

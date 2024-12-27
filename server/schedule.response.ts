@@ -51,3 +51,9 @@ export class GetScheduleElement {
     group: Group;
   };
 }
+
+
+export interface ErrorCreatingTimetableFromExcel {
+  /** key - номер строки, value - ошибка*/
+  [key: number]: string 
+}
