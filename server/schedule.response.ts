@@ -2,8 +2,7 @@ import { Timetable, TimetableTypes, TimetableWeekdays, TimetableWeekparities } f
 
 import { CalendarActivityType } from '../models/calendar.model';
 import { CustomActivity } from './../models/custom-activities.model';
-import { Group } from 'models';
-
+import { Group } from '../models/group.model';
 /**
  * Response is an array of this type
  */
