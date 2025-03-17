@@ -43,6 +43,8 @@ export class Record {
   comments: UserComment[];
 
   relatedToMeCommentsAcrossCopies: UserComment[];
+  
+  authorTopLevelComments: UserComment[];
 
   reactions: UserReaction[];
 
