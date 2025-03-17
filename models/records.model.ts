@@ -42,6 +42,8 @@ export class Record {
 
   comments: UserComment[];
 
+  relatedToMeCommentsAcrossCopies: UserComment[];
+
   reactions: UserReaction[];
 
   favorites: UserFavorite[];
@@ -51,6 +53,8 @@ export class Record {
   userTasks: UserTask[];
 
   views: UserView[];
+
+  totalViewsAcrossCopies: string;
 
   /**
    * Нужно для того, чтобы при создании записи, с которой могут взаимодействовать несколько групп,
@@ -73,6 +77,8 @@ export class Record {
   relatedGroupIds: number[] | null;
 
   relatedUserIds: number[] | null;
+
+  copiesIds: number[] | null;
 
   relatedGroups?: Group[];
 
