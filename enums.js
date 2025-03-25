@@ -69,6 +69,10 @@ const AssignmentPriority = {
   3: 'Низкий приоритет',
 };
 
+const AppSettingsKeys = {
+  firstWeekParity: 'firstWeekParity',
+};
+
 // eslint-disable-next-line no-undef
 module.exports = {
   CalendarActivityType,
@@ -80,5 +84,6 @@ module.exports = {
   TimetableWeekparities,
   TimetableWeekdaysRU,
   TimetableTypes,
-  TimetableWeekdays
+  TimetableWeekdays,
+  AppSettingsKeys
 };

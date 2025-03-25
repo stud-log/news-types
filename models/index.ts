@@ -1,3 +1,4 @@
+import { AppSettings, AppSettingsKeys } from './app-settings.model';
 import { UserSetting } from './user-settings.model';
 import { Calendar, CalendarActivityType } from './calendar.model';
 import { Homework, HomeworkType } from './homeworks.model';
@@ -31,6 +32,8 @@ import { Assignment, AssignmentPriority } from './assignments.model';
 export {
   Achievement,
   type AssignmentPriority,
+  AppSettings,
+  type AppSettingsKeys,
   Calendar,
   Assignment,
   type CalendarActivityType,
